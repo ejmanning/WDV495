@@ -3,6 +3,7 @@ const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
+const watch = require('gulp-watch');
 
 
 //Gulp Top Level Functions
@@ -62,9 +63,9 @@ const concat = require('gulp-concat');
 gulp.task('default', gulp.parallel('message', 'copyHTML', 'imageMin', 'sass', 'scripts'));
 
 gulp.task('watch', function(done){
-  gulp.watch('js/*.js', ['scripts']);
-  gulp.watch('images/*', ['imageMin']);
-  gulp.watch('sass/*.scss', ['sass']);
-  gulp.watch('*.html', ['copyHTML']);
+  gulp.watch('js/*.js', gulp.parallel(['scripts']));
+  gulp.watch('images/*', gulp.parallel(['imageMin']));
+  gulp.watch('sass/*.scss', gulp.parallel(['sass']));
+  gulp.watch('*.html', gulp.parallel(['copyHTML']));
   done();
 })

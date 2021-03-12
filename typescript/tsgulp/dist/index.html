@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fun with Typescript</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <h1>Simple Typescript Project</h1>
+
+
+    <form>
+      <h1>About Me</h1>
+      <label for="firstName">First Name: </label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Last Name: </label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="age">Age: </label>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="favoriteColor">Favorite Color: </label>
+        <input type="text" id="favoriteColor" name="favoriteColor" required><br>
+
+        <label for="favoriteNumber">Favorite Number: </label>
+        <input type="number" id="favoriteNumber" name="favoriteNumber" required><br>
+
+        <label for="favoriteAnimal">Favorite Animal: </label>
+        <input type="text" id="favoriteAnimal" name="favoriteAnimal" required><br>
+
+        <label for="likesDarkChocolate">Do you like dark chocolate?</label>
+        <input type="radio" id="yes" name="likesDarkChocolate" value="true">Yes</input>
+        <input type="radio" id="no" name="likesDarkChocolate" value="false">No</input><br>
+
+        <input type="reset" value="Reset">
+        <input type="button" id="submit" name="submit" value="Submit">
+
+        <h2 id="index"></h2>
+
+    </form><br><br><br><br><br>
+
+    <form>
+      <h1>Calculator</h1>
+      <label for="firstNumber">First Number: </label>
+      <input type="number" id="firstNumber" name="firstNumber" required>
+
+      <select name="operator" id="operator">
+        <option id="add" value="add">+</option>
+        <option id="subtract" value="subtract">-</option>
+        <option id="multiply" value="multiply">*</option>
+        <option id="divide" value="divide">/</option>
+      </select>
+
+      <label for="secondNumber">Second Number: </label>
+      <input type="number" id="secondNumber" name="secondNumber" required><br>
+
+      <input type="reset" value="Reset">
+      <input type="button" id="answer" name="answer" value="Calculate">
+
+    <form>
+    <script src="main.js"></script>
+  </body>
+</html>
